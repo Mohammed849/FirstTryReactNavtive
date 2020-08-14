@@ -1,16 +1,31 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const ViewTex = () => {
   return (
-    <View style={{ backgroundColor: 'green' }}>
+    <View style={styles.Bgcgrey}>
       <View>
-        <text style={{ fontSize: 30 }}> Hello Mohammed</text>
-        <text style={{ textAlign: 'center' }}>How are you doing</text>
-        <text style={{ fontWeight: 'bold' }}>Well done</text>
+        <Text style={styles.Taille}> Hello Mohammed</Text>
+        <Text style={styles.centre}>How are you doing</Text>
+        <Text style={styles.Engras}>Well done</Text>
       </View>
     </View>
   );
 };
+const styles = StyleSheet.create({
+  Bgcgrey: {
+    backgroundColor: 'grey',
+  },
+  Taille: {
+    fontSize: 30,
+  },
+
+  centre: {
+    textAlign: 'center',
+  },
+  Engras: {
+    fontWeight: 'bold',
+  },
+});
 
 export default ViewTex;
