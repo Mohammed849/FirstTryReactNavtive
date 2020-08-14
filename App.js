@@ -1,5 +1,12 @@
 import React from 'react';
-import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  Button,
+} from 'react-native';
 class App extends React.Component {
   render() {
     return (
@@ -18,6 +25,11 @@ class App extends React.Component {
               uri:
                 'https://www.konexio.eu/uploads/1/2/0/2/120245745/konexio-logo_1.png',
             }}
+          />
+          <Button
+            title='Click here'
+            disabled
+            onPress={() => Alert.alert('Cannot press this one')}
           />
         </View>
       </ScrollView>
